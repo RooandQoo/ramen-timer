@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class SoundAlarmListenerService extends WearableListenerService {
 
-    private static final String TAG = "RamenTimerApp";
+    private static final String TAG = "SoundAlarmListener";
 
     private static final String FIELD_ALARM_ON = "alarm_on";
 

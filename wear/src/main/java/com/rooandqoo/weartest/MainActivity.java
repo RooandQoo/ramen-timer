@@ -3,6 +3,7 @@ package com.rooandqoo.weartest;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.wearable.view.DotsPageIndicator;
 import android.support.wearable.view.GridViewPager;
 import android.support.wearable.view.WatchViewStub;
@@ -27,6 +28,23 @@ public class MainActivity extends Activity {
                 setupViewPager();
             }
         });
+
+        //final AlarmController ac = new AlarmController(this);
+        //ac.turnOn();
+
+        new Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+
+                        // もう一回
+                        new Handler().postDelayed(
+                                new Runnable() {
+                                    public void run() {
+
+                                    }
+                                }, 5000);
+                    }
+                }, 5000);
     }
 
     private void setupViewPager() {
