@@ -3,7 +3,6 @@ package com.rooandqoo.weartest;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
-import android.support.wearable.view.CardFragment;
 import android.support.wearable.view.FragmentGridPagerAdapter;
 
 import java.util.ArrayList;
@@ -19,15 +18,10 @@ public class MyGridViewPagerAdapter extends FragmentGridPagerAdapter {
         mContext = context;
 
         mColumns = new ArrayList<>();
+        mColumns.add(CustomFragment.createInstance(1));
         mColumns.add(CustomFragment.createInstance(3));
         mColumns.add(CustomFragment.createInstance(4));
         mColumns.add(CustomFragment.createInstance(5));
-    }
-
-    private Fragment cardFragment(String title, String text) {
-        CardFragment fragment = CardFragment.create(title, text);
-        fragment.setCardMarginBottom(mContext.getResources().getDimensionPixelSize(R.dimen.card_margin_bottom));
-        return fragment;
     }
 
     public Fragment getFragment(int i, int i1) {
