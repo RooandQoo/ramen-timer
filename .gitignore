@@ -1,0 +1,58 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# configuration files
+local.properties
+secure.properties
+project.properties
+crashlytics.properties
+crashlytics-build.properties
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+lint.xml
+.factorypath
+
+# Android Studio
+.gradle
+/*/local.properties
+**/out
+**/build
+**/production
+*.iml
+*.iws
+*.ipr
+!.idea/runConfigurations/*
+.idea/*.xml
+.idea/.name
+.idea/copyright/
+.idea/libraries/
+.idea/scopes/
+.idea/inspectionProfiles/
+
+# temporary files
+*~
+*.swp
+
+# thumbnail caches
+Thumbs.db
+.DS_Store
+
+custom_rules.xml
+lint-results.xml
+com_crashlytics_export_strings.xml
+
+*.keystore
