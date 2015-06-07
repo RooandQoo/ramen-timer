@@ -19,10 +19,9 @@ public class MyGridViewPagerAdapter extends FragmentGridPagerAdapter {
         mContext = context;
 
         mColumns = new ArrayList<>();
-        mColumns.add(cardFragment("hoge", "fuga"));
-        mColumns.add(cardFragment("piyo", "poyo"));
-        mColumns.add(new CustomFragment());
-        mColumns.add(cardFragment("fizz", "buzz"));
+        mColumns.add(CustomFragment.createInstance(3));
+        mColumns.add(CustomFragment.createInstance(4));
+        mColumns.add(CustomFragment.createInstance(5));
     }
 
     private Fragment cardFragment(String title, String text) {
